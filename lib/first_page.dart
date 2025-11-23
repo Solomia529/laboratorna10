@@ -15,7 +15,6 @@ class _FirstPageState extends State<FirstPage> {
   static const String robotUrl =
       'https://emojiisland.com/cdn/shop/products/Robot_Emoji_Icon_abe1111a-1293-4668-bdf9-9ceb05cff58e_large.png?v=1571606090';
 
-  // константа фіолетового кольору для кнопки OK у діалогах
   static const Color purple = Color(0xFF6B4D6D);
 
   Future<void> _openPreview() async {
@@ -65,15 +64,14 @@ class _FirstPageState extends State<FirstPage> {
                 style: const TextStyle(fontSize: 18),
               ),
               const SizedBox(height: 12),
-              // кнопка OK у правому нижньому куті
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
                   onPressed: () {
-                    Navigator.of(context).pop(); // закриває діалог
+                    Navigator.of(context).pop();
                   },
                   style: TextButton.styleFrom(
-                    foregroundColor: purple, // фіолетовий текст
+                    foregroundColor: purple,
                     textStyle: const TextStyle(fontSize: 16),
                     padding: const EdgeInsets.symmetric(
                         vertical: 8.0, horizontal: 12.0),
